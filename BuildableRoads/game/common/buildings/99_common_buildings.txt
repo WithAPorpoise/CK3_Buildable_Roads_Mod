@@ -1,0 +1,96 @@
+﻿####################
+# Common Buildings #
+####################
+####################
+# Mod Buildings #
+####################
+common_roads_01 = {
+	type_icon = "icon_building_roads.dds"
+
+	construction_time = standard_construction_time
+
+	cost_gold = tribal_building_tier_1_cost
+	
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit = yes
+	}
+	
+	can_construct_potential = {
+		building_common_roads_requirement_terrain = yes
+	}
+	
+	can_construct = {
+		culture = {
+			has_innovation = innovation_development_01
+			NOT = { OR = {
+				
+				AND = { 
+#					terrain = wetlands
+#					NOT = {	culture = {has_innovation = innovation_development_03}
+#					}
+#				}			
+#				AND = {
+#					terrain = jungle
+#					NOT = { culture = {has_innovation = innovation_elephantry}
+					}
+				}
+			}}
+		}
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.1
+	}
+
+#	province_modifier = {
+#		movement_speed = 1
+#	}
+
+	next_building = common_roads_02
+
+
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}
+
+common_roads_02 = {
+	construction_time = standard_construction_time
+	
+	is_enabled = {
+		building_disable_if_vastly_over_domain_limit = yes
+	}
+	
+	can_construct_potential = {
+		building_common_roads_requirement_terrain = yes
+	}
+
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_development_02
+		}
+	}
+
+
+	cost_gold = cheap_building_tier_1_cost
+
+	county_modifier = {
+		development_growth_factor = 0.12
+	}
+
+#	province_modifier = {
+#		movement_speed = 1
+#	}
+
+
+	type_icon = "icon_building_roads.dds"
+
+
+	ai_value = {
+		base = 10
+		ai_general_building_modifier = yes
+		ai_economical_building_preference_modifier = yes
+	}
+}

@@ -1,0 +1,22 @@
+﻿######################################################################
+# Terrain
+######################################################################
+
+building_common_roads_requirement_terrain = {
+	OR = {
+		terrain = farmlands
+		terrain = plains
+		terrain = drylands
+		terrain = desert
+		terrain = oasis
+		terrain = floodplains
+		terrain = steppe
+		terrain = mountains
+		terrain = desert_mountains
+		terrain = forest
+		terrain = taiga
+		terrain = hills
+		terrain = jungle
+		terrain = wetlands
+	}
+}
