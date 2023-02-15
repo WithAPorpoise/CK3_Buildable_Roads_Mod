@@ -26,4 +26,4 @@ There are also some requirements for each level:
 7.)
 8.)
 ADDITIONAL FEATURES:
-Roads degrade over time somehow.
+Roads must be upkept over time via events.
