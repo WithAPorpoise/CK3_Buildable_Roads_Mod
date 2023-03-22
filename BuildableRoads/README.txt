@@ -1,3 +1,5 @@
+Last updated for CK3 Base v1.2.2
+
 Buildable Roads adds Roads to almost all holdings as a building option. 
 Not availabe in Wetlands without cranes innovation or Jungle without elephantry
 
